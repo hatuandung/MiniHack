@@ -18,10 +18,10 @@ for(var i = 0; i < pre; i++){
   if(history[i].yours == false ){
     count = count + 1;
   }
-  if(history[i].yours == true){
+  if(history[i].theirs == false){
     count2 = count2 + 1;
   }
-  if(history[i].yours == false && count > 20){
+  if(history[i].yours == false && count > 10){
     myChoice = true;
   }/*else if(history[i].yours == true && count > 20){
     myChoice = Math.random();
@@ -33,14 +33,16 @@ for(var i = 0; i < pre; i++){
     myChoice = false;
   }else if (history[i].yours == false && history[i].theirs == false){
     myChoice = true;
-  }//else if (history[i].yours)
-  /*if(count2 - count1 == 10){
-    myChoice = false;
-  }*/
+  }else if (history[i].yours = false && history[i] == true && count > 100){
+    count = 0;
+  }
+
+  if(count - count2 > 100){
+
+  }
 
   
-  /*if(history[i].yours == true && history[i].theirs == fail){
-    myChoice = fail;*/
+  
   
 }
   
