@@ -25,7 +25,7 @@ for(var i = 0; i < pre; i++){
     myChoice = true;
   }else if(history[i].yours == true && count > 20){
     myChoice = Math.random();
-    count = 0;
+    
   }else if (history[i].yours == true && history[i].theirs == true){
     myChoice = false;
   }else if (history[i].yours == true && history [i].theirs == true){
@@ -34,7 +34,7 @@ for(var i = 0; i < pre; i++){
   }
   /*if(count2 - count1 == 10){
     myChoice = false;
-  }*/
+  }
 
   
   /*if(history[i].yours == true && history[i].theirs == fail){
