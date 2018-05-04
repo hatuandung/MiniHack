@@ -21,7 +21,7 @@ for(var i = 0; i < pre; i++){
   if(history[i].theirs == false){
     count2 = count2 + 1;
   }
-  if(history[i].yours == false && count > 10){
+  if(history[i].yours == false && count > 100){
     myChoice = true;
   }/*else if(history[i].yours == true && count > 20){
     myChoice = Math.random();
@@ -37,7 +37,8 @@ for(var i = 0; i < pre; i++){
     count = 0;
   }
 
-  if(count - count2 > 100){
+  if(count2 - count > 100){
+    count = 0;
 
   }
 
