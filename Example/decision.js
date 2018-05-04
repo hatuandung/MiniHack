@@ -26,11 +26,13 @@ for(var i = 0; i < pre; i++){
   }else if(history[i].yours == true && count > 20){
     myChoice = Math.random();
     
-  }else if (history[i].yours == true && history[i].theirs == true){
-    myChoice = false;
   }else if (history[i].yours == true && history [i].theirs == true){
     myChoice = false;
     count = 0;
+  }else if(history[i].your == true && history[i].theirs == false){
+    myChoice = false;
+  }else if (history[i].your == false && history[i].theirs == false){
+    myChoice = true;
   }
   /*if(count2 - count1 == 10){
     myChoice = false;
