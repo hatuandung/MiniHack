@@ -17,9 +17,14 @@ for(var i = 0; i < pre; i++){
   if(history[i].yours == false ){
     count = count + 1;
   }
-  if(history[i].yours == false && count > 50){
+  if(history[i].yours == false && count > 20){
     myChoice = true;
+  }else if(history[i].yours == true && count > 20){
+    myChoice = Math.random();
   }
+  /*if(history[i].yours == true && history[i].theirs == fail){
+    myChoice = fail;
+  }*/
   //if(p1Answer == true )
   
   
