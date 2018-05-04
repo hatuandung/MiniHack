@@ -23,10 +23,10 @@ for(var i = 0; i < pre; i++){
   }
   if(history[i].yours == false && count > 20){
     myChoice = true;
-  }else if(history[i].yours == true && count > 20){
+  }/*else if(history[i].yours == true && count > 20){
     myChoice = Math.random();
     
-  }else if (history[i].yours == true && history [i].theirs == true){
+  }*/else if (history[i].yours == true && history [i].theirs == true){
     myChoice = false;
     count = 0;
   }else if(history[i].yours == true && history[i].theirs == false){
