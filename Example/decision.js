@@ -4,7 +4,19 @@
 //   { yours: true, theirs: false },
 // ]
 const decide = (history = []) => {
-  return false; // Your code here
+  var pre = history.length - 1;
+  var myChoice  = true;
+for(var i = 0; i < pre; i++){
+  if(history[i].theirs == true){
+    myChoice = false;
+  }
+  if(history[i].theirs == false){
+    myChoice = true;
+  }
+}
+  
+
+  return myChoice;
 }
 
 module.exports = decide;
