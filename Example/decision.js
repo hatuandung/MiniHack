@@ -23,9 +23,9 @@ for(var i = 0; i < pre; i++){
     myChoice = Math.random();
   }else if (history[i].yours == true && history[i].theirs == true){
     myChoice = false;
-  }else if (history[i].yours == false && history [i].theirs == true){
+  }/*else if (history[i].yours == false && history [i].theirs == true){
     myChoice = true;
-  }
+  }*/
 
   
   /*if(history[i].yours == true && history[i].theirs == fail){
