@@ -9,7 +9,7 @@ const decide = (history = []) => {
   var count = 0;
   var count2 = 0;
 for(var i = 0; i < pre; i++){
-  /*if(history[i].theirs == true){
+  if(history[i].theirs == true){
     myChoice = false;
   }
   if(history[i].theirs == false){
@@ -34,33 +34,11 @@ for(var i = 0; i < pre; i++){
   }
   /*if(count2 - count1 == 10){
     myChoice = false;
-  }
+  }*/
 
   
   /*if(history[i].yours == true && history[i].theirs == fail){
-    myChoice = fail;
-  }*/
-  //if(p1Answer == true )
-  if(history[i].yours == false ){
-    count = count + 1;
-  }
-  if(history[i].yours == false && count > 50){
-    count = 0;
-  }
-  if(history[i].yours == true && count < 50){
-    count = 0;
-  }
-  if(history[i].yours == false && count > 50){
-    myChoice = true;
-  }else if(history[i].yours == true && count < 50){
-    myChoice = Math.random();
-    count = 0;
-  }else if (history[i].yours == true && count > 50){
-    myChoice = false;
-  }else if (history[i].yours == true && history [i].theirs == true){
-    myChoice = false;
-    count = 0;
-  }
+    myChoice = fail;*/
   
 }
   
