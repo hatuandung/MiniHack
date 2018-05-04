@@ -8,12 +8,12 @@ const decide = (history = []) => {
   var myChoice  = true;
   var count = 0;
 for(var i = 0; i < pre; i++){
-  /*if(history[i].theirs == true){
+  if(history[i].theirs == true){
     myChoice = false;
   }
   if(history[i].theirs == false){
     myChoice = true;
-  }*/
+  }
   if(history[i].yours == false ){
     count = count + 1;
   }
@@ -21,11 +21,11 @@ for(var i = 0; i < pre; i++){
     myChoice = true;
   }else if(history[i].yours == true && count < 50){
     myChoice = Math.random();
-  }else if (history[i].yours == true && history[i].theirs == true){
+  }/*else if (history[i].yours == true && history[i].theirs == true){
     myChoice = false;
   }/*else if (history[i].yours == false && history [i].theirs == true){
     myChoice = true;
-  }*/
+  }*/ 
 
   
   /*if(history[i].yours == true && history[i].theirs == fail){
