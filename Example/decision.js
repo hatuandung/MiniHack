@@ -19,9 +19,10 @@ for(var i = 0; i < pre; i++){
   }
   if(history[i].yours == false && count > 20){
     myChoice = true;
-  }else if(history[i].yours == true && count > 20){
+  }else if(history[i].yours == true && count < 50){
     myChoice = Math.random();
   }
+  
   /*if(history[i].yours == true && history[i].theirs == fail){
     myChoice = fail;
   }*/
