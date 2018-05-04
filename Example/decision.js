@@ -19,13 +19,13 @@ for(var i = 0; i < pre; i++){
   }
   if(history[i].yours == false && count > 20){
     myChoice = true;
-  }else if(history[i].yours == true && count < 50){
+  }else if(history[i].yours == true && count > 50){
     myChoice = Math.random();
   }else if (history[i].yours == true && history[i].theirs == true){
     myChoice = false;
-  }/*else if (history[i].yours == false && history [i].theirs == true){
-    myChoice = true;
-  }*/ 
+  }else if (history[i].yours == true && history [i].theirs == true){
+    myChoice = false;
+  } 
 
   
   /*if(history[i].yours == true && history[i].theirs == fail){
